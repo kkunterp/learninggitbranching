@@ -1,0 +1,86 @@
+---REMOTE----
+
+
+-- Clone Intro --
+
+git clone
+
+-- Remote Branches --
+
+git commit
+git checkout o/master
+git commit
+
+-- Git Fetchin’ --
+
+git fetch
+
+-- Git Pullin’ --
+
+git pull
+
+-- Fakeing Teamwork --
+
+git clone
+git fakeTeamwork master 2
+git commit
+git pull
+
+-- Git Pushin’ --
+
+git clone
+git commit
+git commit
+git push
+
+-- Diverged History --
+
+git clone
+git fakeTeamwork master 1
+git commit 
+git pull —rebase
+git push
+
+-- PUSH MASTER! --
+    git rebase side1 side2
+    git rebase side2 side3
+    git rebase side3 master
+    git pull --rebase
+    git push
+
+
+-- REMOTE RACKING --
+
+git checkout -b side o/master
+git commit
+git pull —-rebase
+git push
+
+-- Git push arguments --
+
+git push origin master
+git push origin foo
+
+
+-- Git push arguments — Expanded! --
+
+git push origin master~1:foo
+git push origin foo:master
+
+
+-- Fetch arguments --
+
+git fetch origin master~1:foo
+git fetch origin foo:master
+git checkout foo
+git merge master
+
+-- Source of nothing --
+
+git push origin :foo
+git fetch origin :bar
+
+-- Pull arguments --
+
+git pull origin bar:foo
+git pull origin master:side
